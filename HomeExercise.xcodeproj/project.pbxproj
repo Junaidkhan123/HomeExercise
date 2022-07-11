@@ -13,9 +13,17 @@
 		3908D3B4287C69CC004D31F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3908D3B2287C69CC004D31F4 /* Main.storyboard */; };
 		3908D3B6287C69CD004D31F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3908D3B5287C69CD004D31F4 /* Assets.xcassets */; };
 		3908D3B9287C69CD004D31F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3908D3B7287C69CD004D31F4 /* LaunchScreen.storyboard */; };
-		3908D3C4287C69CD004D31F4 /* HomeExerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3C3287C69CD004D31F4 /* HomeExerciseTests.swift */; };
 		3908D3CE287C69CD004D31F4 /* HomeExerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3CD287C69CD004D31F4 /* HomeExerciseUITests.swift */; };
 		3908D3D0287C69CD004D31F4 /* HomeExerciseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3CF287C69CD004D31F4 /* HomeExerciseUITestsLaunchTests.swift */; };
+		3908D3E3287C6B77004D31F4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3E2287C6B77004D31F4 /* AppError.swift */; };
+		3908D3E6287C6C94004D31F4 /* TrendingRepoWebServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3E5287C6C94004D31F4 /* TrendingRepoWebServiceProtocol.swift */; };
+		3908D3E9287C6DD7004D31F4 /* TrendingRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3E8287C6DD7004D31F4 /* TrendingRepo.swift */; };
+		3908D3ED287C6F04004D31F4 /* TrendingRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3EC287C6F04004D31F4 /* TrendingRepoViewModel.swift */; };
+		3908D3EF287C704A004D31F4 /* TrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3EE287C704A004D31F4 /* TrendingRepoCellViewModel.swift */; };
+		3908D3F2287CA7C6004D31F4 /* TrendingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F1287CA7C6004D31F4 /* TrendingViewModelTest.swift */; };
+		3908D3F5287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift */; };
+		3908D3F8287CAF54004D31F4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F7287CAF54004D31F4 /* NetworkService.swift */; };
+		3908D3FA287CB0C2004D31F4 /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F9287CB0C2004D31F4 /* NetworkServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +53,18 @@
 		3908D3B8287C69CD004D31F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3908D3BA287C69CD004D31F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3908D3BF287C69CD004D31F4 /* HomeExerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeExerciseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3908D3C3287C69CD004D31F4 /* HomeExerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExerciseTests.swift; sourceTree = "<group>"; };
 		3908D3C9287C69CD004D31F4 /* HomeExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3908D3CD287C69CD004D31F4 /* HomeExerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExerciseUITests.swift; sourceTree = "<group>"; };
 		3908D3CF287C69CD004D31F4 /* HomeExerciseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExerciseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3908D3E2287C6B77004D31F4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		3908D3E5287C6C94004D31F4 /* TrendingRepoWebServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoWebServiceProtocol.swift; sourceTree = "<group>"; };
+		3908D3E8287C6DD7004D31F4 /* TrendingRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepo.swift; sourceTree = "<group>"; };
+		3908D3EC287C6F04004D31F4 /* TrendingRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoViewModel.swift; sourceTree = "<group>"; };
+		3908D3EE287C704A004D31F4 /* TrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
+		3908D3F1287CA7C6004D31F4 /* TrendingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewModelTest.swift; sourceTree = "<group>"; };
+		3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
+		3908D3F7287CAF54004D31F4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3908D3F9287CB0C2004D31F4 /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +115,16 @@
 		3908D3AB287C69CC004D31F4 /* HomeExercise */ = {
 			isa = PBXGroup;
 			children = (
-				3908D3AC287C69CC004D31F4 /* AppDelegate.swift */,
-				3908D3AE287C69CC004D31F4 /* SceneDelegate.swift */,
-				3908D3B0287C69CC004D31F4 /* ViewController.swift */,
-				3908D3B2287C69CC004D31F4 /* Main.storyboard */,
+				3908D3F0287CA4D4004D31F4 /* Network */,
+				3908D3EB287C6EEB004D31F4 /* ViewModel */,
+				3908D3EA287C6E16004D31F4 /* View */,
+				3908D3E7287C6DD0004D31F4 /* Model */,
+				3908D3E1287C6B6A004D31F4 /* Utilities */,
+				3908D3DE287C6A41004D31F4 /* Protocol */,
+				3908D3DD287C6A39004D31F4 /* Extension */,
+				3908D3DC287C69D8004D31F4 /* App Delegate */,
+				3908D3E4287C6C20004D31F4 /* StoryBoard */,
 				3908D3B5287C69CD004D31F4 /* Assets.xcassets */,
-				3908D3B7287C69CD004D31F4 /* LaunchScreen.storyboard */,
 				3908D3BA287C69CD004D31F4 /* Info.plist */,
 			);
 			path = HomeExercise;
@@ -113,7 +133,8 @@
 		3908D3C2287C69CD004D31F4 /* HomeExerciseTests */ = {
 			isa = PBXGroup;
 			children = (
-				3908D3C3287C69CD004D31F4 /* HomeExerciseTests.swift */,
+				3908D3F6287CAF35004D31F4 /* Network */,
+				3908D3F3287CA8B2004D31F4 /* ViewModel */,
 			);
 			path = HomeExerciseTests;
 			sourceTree = "<group>";
@@ -125,6 +146,97 @@
 				3908D3CF287C69CD004D31F4 /* HomeExerciseUITestsLaunchTests.swift */,
 			);
 			path = HomeExerciseUITests;
+			sourceTree = "<group>";
+		};
+		3908D3DC287C69D8004D31F4 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3AC287C69CC004D31F4 /* AppDelegate.swift */,
+				3908D3AE287C69CC004D31F4 /* SceneDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		3908D3DD287C6A39004D31F4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3908D3DE287C6A41004D31F4 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3E5287C6C94004D31F4 /* TrendingRepoWebServiceProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3908D3E1287C6B6A004D31F4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3E2287C6B77004D31F4 /* AppError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		3908D3E4287C6C20004D31F4 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3B2287C69CC004D31F4 /* Main.storyboard */,
+				3908D3B7287C69CD004D31F4 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		3908D3E7287C6DD0004D31F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3E8287C6DD7004D31F4 /* TrendingRepo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3908D3EA287C6E16004D31F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3B0287C69CC004D31F4 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3908D3EB287C6EEB004D31F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3EC287C6F04004D31F4 /* TrendingRepoViewModel.swift */,
+				3908D3EE287C704A004D31F4 /* TrendingRepoCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3908D3F0287CA4D4004D31F4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3F7287CAF54004D31F4 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3908D3F3287CA8B2004D31F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3F1287CA7C6004D31F4 /* TrendingViewModelTest.swift */,
+				3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3908D3F6287CAF35004D31F4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3F9287CB0C2004D31F4 /* NetworkServiceTest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +310,7 @@
 					};
 					3908D3BE287C69CD004D31F4 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 						TestTargetID = 3908D3A8287C69CC004D31F4;
 					};
 					3908D3C8287C69CD004D31F4 = {
@@ -260,7 +373,13 @@
 			files = (
 				3908D3B1287C69CC004D31F4 /* ViewController.swift in Sources */,
 				3908D3AD287C69CC004D31F4 /* AppDelegate.swift in Sources */,
+				3908D3E3287C6B77004D31F4 /* AppError.swift in Sources */,
+				3908D3E6287C6C94004D31F4 /* TrendingRepoWebServiceProtocol.swift in Sources */,
+				3908D3F8287CAF54004D31F4 /* NetworkService.swift in Sources */,
+				3908D3ED287C6F04004D31F4 /* TrendingRepoViewModel.swift in Sources */,
+				3908D3EF287C704A004D31F4 /* TrendingRepoCellViewModel.swift in Sources */,
 				3908D3AF287C69CC004D31F4 /* SceneDelegate.swift in Sources */,
+				3908D3E9287C6DD7004D31F4 /* TrendingRepo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3908D3C4287C69CD004D31F4 /* HomeExerciseTests.swift in Sources */,
+				3908D3FA287CB0C2004D31F4 /* NetworkServiceTest.swift in Sources */,
+				3908D3F2287CA7C6004D31F4 /* TrendingViewModelTest.swift in Sources */,
+				3908D3F5287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -489,14 +610,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.HomeExerciseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeExercise.app/HomeExercise";
@@ -508,10 +636,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.HomeExerciseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
