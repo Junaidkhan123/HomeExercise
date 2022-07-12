@@ -21,9 +21,12 @@
 		3908D3ED287C6F04004D31F4 /* TrendingRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3EC287C6F04004D31F4 /* TrendingRepoViewModel.swift */; };
 		3908D3EF287C704A004D31F4 /* TrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3EE287C704A004D31F4 /* TrendingRepoCellViewModel.swift */; };
 		3908D3F2287CA7C6004D31F4 /* TrendingViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F1287CA7C6004D31F4 /* TrendingViewModelTest.swift */; };
-		3908D3F5287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift */; };
+		3908D3F5287CA8F8004D31F4 /* TrendingRepoCellViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModelTest.swift */; };
 		3908D3F8287CAF54004D31F4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F7287CAF54004D31F4 /* NetworkService.swift */; };
 		3908D3FA287CB0C2004D31F4 /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3F9287CB0C2004D31F4 /* NetworkServiceTest.swift */; };
+		3908D402287D7547004D31F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D401287D7547004D31F4 /* Constant.swift */; };
+		3908D405287D823E004D31F4 /* MockTrendingRepoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D404287D823E004D31F4 /* MockTrendingRepoWebService.swift */; };
+		3908D409287DB3EB004D31F4 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D408287DB3EA004D31F4 /* MockURLProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +65,12 @@
 		3908D3EC287C6F04004D31F4 /* TrendingRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoViewModel.swift; sourceTree = "<group>"; };
 		3908D3EE287C704A004D31F4 /* TrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
 		3908D3F1287CA7C6004D31F4 /* TrendingViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewModelTest.swift; sourceTree = "<group>"; };
-		3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
+		3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCellViewModelTest.swift; sourceTree = "<group>"; };
 		3908D3F7287CAF54004D31F4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		3908D3F9287CB0C2004D31F4 /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		3908D401287D7547004D31F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		3908D404287D823E004D31F4 /* MockTrendingRepoWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrendingRepoWebService.swift; sourceTree = "<group>"; };
+		3908D408287DB3EA004D31F4 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,7 @@
 		3908D3C2287C69CD004D31F4 /* HomeExerciseTests */ = {
 			isa = PBXGroup;
 			children = (
+				3908D403287D8229004D31F4 /* Mock */,
 				3908D3F6287CAF35004D31F4 /* Network */,
 				3908D3F3287CA8B2004D31F4 /* ViewModel */,
 			);
@@ -176,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				3908D3E2287C6B77004D31F4 /* AppError.swift */,
+				3908D401287D7547004D31F4 /* Constant.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -226,7 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				3908D3F1287CA7C6004D31F4 /* TrendingViewModelTest.swift */,
-				3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift */,
+				3908D3F4287CA8F8004D31F4 /* TrendingRepoCellViewModelTest.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -237,6 +245,15 @@
 				3908D3F9287CB0C2004D31F4 /* NetworkServiceTest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		3908D403287D8229004D31F4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3908D404287D823E004D31F4 /* MockTrendingRepoWebService.swift */,
+				3908D408287DB3EA004D31F4 /* MockURLProtocol.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +395,7 @@
 				3908D3F8287CAF54004D31F4 /* NetworkService.swift in Sources */,
 				3908D3ED287C6F04004D31F4 /* TrendingRepoViewModel.swift in Sources */,
 				3908D3EF287C704A004D31F4 /* TrendingRepoCellViewModel.swift in Sources */,
+				3908D402287D7547004D31F4 /* Constant.swift in Sources */,
 				3908D3AF287C69CC004D31F4 /* SceneDelegate.swift in Sources */,
 				3908D3E9287C6DD7004D31F4 /* TrendingRepo.swift in Sources */,
 			);
@@ -389,7 +407,9 @@
 			files = (
 				3908D3FA287CB0C2004D31F4 /* NetworkServiceTest.swift in Sources */,
 				3908D3F2287CA7C6004D31F4 /* TrendingViewModelTest.swift in Sources */,
-				3908D3F5287CA8F8004D31F4 /* TrendingRepoCellViewModel.swift in Sources */,
+				3908D405287D823E004D31F4 /* MockTrendingRepoWebService.swift in Sources */,
+				3908D409287DB3EB004D31F4 /* MockURLProtocol.swift in Sources */,
+				3908D3F5287CA8F8004D31F4 /* TrendingRepoCellViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

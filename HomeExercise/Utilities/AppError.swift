@@ -6,8 +6,9 @@
 //
 
 import Foundation
-enum GFError: String, Error {
+enum AppError: String, Error {
+    case invalidURL           = "invalid url"
     case unableToComplete   = "Unable to complete your request. Please check your internet connection"
-    case invalidResponse    = "Invalid response from the server. Please try again."
+    case invalidResponse    = "unableToComplete"
     case invalidData        = "The data received from the server was invalid. Please try again."
 }

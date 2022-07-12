@@ -8,40 +8,79 @@
 import XCTest
 @testable import HomeExercise
 class TrendingViewModelTest: XCTestCase {
-
+    var sut: TrendingRepoViewModel!
+    var apiService: MockTrendingRepoWebService!
     override func setUpWithError() throws {
+
+        apiService = MockTrendingRepoWebService()
+        sut = TrendingRepoViewModel(apiService: apiService)
+        apiService.isFetchTrendingCalled = true
+
     }
 
     override func tearDownWithError() throws {
+        sut = nil
+        apiService = nil
     }
 
     func testTrendingViewModel_WhenTitleMatch_ShoudlReturnTrue() {
         //Arrange
-        let sut = TrendingRepoViewModel()
         //Act
         let title =  sut.getTitle()
         //Assert
-        XCTAssertTrue(title, "Trending Repo", "title should have eqaul to Trending Repo")
+        XCTAssertEqual(title, "Trending" , " sut.getTitle() should have equal have to Trending")
     }
 
     func testTrendingViewModel_WhenNumberofRepoEqual_ShoudlReturnTrue() {
         //Arrange
-        let sut = TrendingRepoViewModel()
         //Act
+        sut.fetchTrendingData()
         let repoCount =  sut.numberOfRepo()
         //Assert
-        XCTAssertTrue(repoCount, "10", "repoCount should have eqaul to 10")
+        XCTAssertEqual(repoCount, 3 , " sut.numberOfRepo() should have equal to 3")
 
     }
 
-    func testTrendingViewModel_WhenFetchTrendindData_ShouldCalled() {
+    func testTrendingViewModel_WhenFetchTrendindData_ReloadTableViewClosure_ShouldCall() {
         //Arrange
-        let sut = TrendingRepoViewModel()
+
+        let reloadTableViewExpectations = expectation(description: "ReloadTableViewClosure")
+        //Act
+        sut.reloadTableViewData = {
+            reloadTableViewExpectations.fulfill()
+
+            // Assert
+            XCTAssert(true, "reloadTableViewData closure should have executed by fetching Trending")
+        }
+
+        sut.fetchTrendingData()
+        wait(for: [reloadTableViewExpectations], timeout: 3)
+    }
+
+    func testTrendingViewModel_WhenFetchedTrendingData_FailedRequest_UpdateLoadingStatus_ShouldCall() {
+        //Arrange
+        apiService.shouldReturnError = true
+        let updateLoadingExpectations = expectation(description: "updateLoadingExpectations")
+
+
+        //Act
+
+        sut.updateLoadingStatus = {
+            updateLoadingExpectations.fulfill()
+        }
+
+        sut.fetchTrendingData()
+        wait(for: [updateLoadingExpectations], timeout: 3)
+
+    }
+
+    func testTrendingViewModel_WhenFetchedTrendingData_TrendingCellViewModel_ShouldProcess() {
 
         //Act
         sut.fetchTrendingData()
-        //Assert
-        
-
+        let cellViewModel = sut.trendingCellViewModel(for: 0)
+        XCTAssertNotNil(cellViewModel, "sut.trendingCellViewModel(for: 0) should return a TrendindCellViewModel")
     }
+
+
 }

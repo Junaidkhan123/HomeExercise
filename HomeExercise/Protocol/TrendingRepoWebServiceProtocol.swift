@@ -7,6 +7,6 @@
 
 import Foundation
 protocol TrendingRepoWebServiceProtocol {
-    func getTrendingRepositories(completion: @escaping(Result<TrendingRepo, Error>) -> Void)
+    func getTrendingRepositories(completion: @escaping(Result<[TrendingRepositories], AppError>) -> Void)
 }
 
