@@ -13,33 +13,38 @@ struct TrendingRepo: Decodable {
 struct TrendingRepositories: Decodable {
     let name: String
     let owner: Owner
-    let repoosioryDescription: String
-    let stargazers_count: Int
-    let language: String
+    let reposioryDescription: String
+    let starCount: Int
+    let language: String?
 
     enum CodingKeys: String, CodingKey {
         case name, owner
-        case repoosioryDescription = "description"
-        case stargazers_count
+        case reposioryDescription = "description"
+        case starCount = "stargazers_count"
         case language
     }
 }
 
 struct Owner: Decodable {
     let login: String
-    let avatar_url: String
+    let avatarURL: String
+
+    enum CodingKeys: String, CodingKey {
+        case login
+        case avatarURL = "avatar_url"
+    }
 }
 
 extension Owner {
     static var mocked: [Owner] = [
-        Owner(login: "Junaid", avatar_url: "https://avatars.githubusercontent.com/u/25044194?v=4")
+        Owner(login: "Junaid", avatarURL: "https://avatars.githubusercontent.com/u/25044194?v=4")
     ]
 }
 extension TrendingRepositories {
     static var mocked : [TrendingRepositories] =
     [
-        TrendingRepositories(name: "Artist", owner: Owner.mocked[0], repoosioryDescription: "A Beautiful Programming Language", stargazers_count: 0, language: "Swift"),
-        TrendingRepositories(name: "Artitst", owner: Owner.mocked[0], repoosioryDescription: "", stargazers_count: 0, language: "Swift"),
-        TrendingRepositories(name: "Artitst", owner: Owner.mocked[0], repoosioryDescription: "", stargazers_count: 0, language: "Swift"),
+        TrendingRepositories(name: "Artist", owner: Owner.mocked[0], reposioryDescription: "A Beautiful Programming Language", starCount: 0, language: "Swift"),
+        TrendingRepositories(name: "Artitst", owner: Owner.mocked[0], reposioryDescription: "", starCount: 0, language: nil),
+        TrendingRepositories(name: "Artitst", owner: Owner.mocked[0], reposioryDescription: "", starCount: 0, language: "Swift"),
     ]
 }

@@ -11,7 +11,6 @@ protocol TrendingRepoCellViewModelPresentable {
     func getRepoName() -> String
     func getUserAvatarURL() -> String
     func getRepoDescription() -> String
-    func getLanguageColor() -> String
     func getLanguage() -> String
     func getGrade() -> Int
 }
@@ -34,24 +33,18 @@ class TrendingRepoCellViewModel: TrendingRepoCellViewModelPresentable {
     }
 
     func getUserAvatarURL() -> String {
-        trendingRepo.owner.avatar_url
+        trendingRepo.owner.avatarURL
     }
 
     func getRepoDescription() -> String {
-        trendingRepo.repoosioryDescription
-    }
-
-    func getLanguageColor() -> String {
-        return ""
+        trendingRepo.reposioryDescription
     }
 
     func getLanguage() -> String {
-        trendingRepo.language
+        trendingRepo.language ?? ""
     }
 
     func getGrade() -> Int {
-        trendingRepo.stargazers_count
+        trendingRepo.starCount
     }
-
-    
 }

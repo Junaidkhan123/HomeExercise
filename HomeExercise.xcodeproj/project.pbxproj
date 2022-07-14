@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3908D3AD287C69CC004D31F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3AC287C69CC004D31F4 /* AppDelegate.swift */; };
 		3908D3AF287C69CC004D31F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3AE287C69CC004D31F4 /* SceneDelegate.swift */; };
-		3908D3B1287C69CC004D31F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3B0287C69CC004D31F4 /* ViewController.swift */; };
+		3908D3B1287C69CC004D31F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D3B0287C69CC004D31F4 /* HomeViewController.swift */; };
 		3908D3B4287C69CC004D31F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3908D3B2287C69CC004D31F4 /* Main.storyboard */; };
 		3908D3B6287C69CD004D31F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3908D3B5287C69CD004D31F4 /* Assets.xcassets */; };
 		3908D3B9287C69CD004D31F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3908D3B7287C69CD004D31F4 /* LaunchScreen.storyboard */; };
@@ -27,6 +27,17 @@
 		3908D402287D7547004D31F4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D401287D7547004D31F4 /* Constant.swift */; };
 		3908D405287D823E004D31F4 /* MockTrendingRepoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D404287D823E004D31F4 /* MockTrendingRepoWebService.swift */; };
 		3908D409287DB3EB004D31F4 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D408287DB3EA004D31F4 /* MockURLProtocol.swift */; };
+		3908D40C287DF8EA004D31F4 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 3908D40B287DF8EA004D31F4 /* Lottie */; };
+		3908D40F287DF90B004D31F4 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 3908D40E287DF90B004D31F4 /* SkeletonView */; };
+		3908D411287DF96B004D31F4 /* UILabel + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D410287DF96B004D31F4 /* UILabel + Ext.swift */; };
+		3908D413287DF987004D31F4 /* UITableView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D412287DF987004D31F4 /* UITableView + Ext.swift */; };
+		3908D415287DF9AA004D31F4 /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D414287DF9AA004D31F4 /* UIView + Ext.swift */; };
+		3908D419287DFA28004D31F4 /* retryLottieFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 3908D418287DFA28004D31F4 /* retryLottieFile.json */; };
+		3908D420287DFA52004D31F4 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3908D41B287DFA52004D31F4 /* ErrorView.xib */; };
+		3908D421287DFA52004D31F4 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D41C287DFA52004D31F4 /* ErrorView.swift */; };
+		3908D422287DFA52004D31F4 /* TrendingRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3908D41E287DFA52004D31F4 /* TrendingRepoCell.swift */; };
+		3908D423287DFA52004D31F4 /* TrendingRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3908D41F287DFA52004D31F4 /* TrendingRepoCell.xib */; };
+		39F8C53D287EE9EE00E30233 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 39F8C53C287EE9EE00E30233 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +61,7 @@
 		3908D3A9287C69CC004D31F4 /* HomeExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3908D3AC287C69CC004D31F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3908D3AE287C69CC004D31F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3908D3B0287C69CC004D31F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3908D3B0287C69CC004D31F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3908D3B3287C69CC004D31F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3908D3B5287C69CD004D31F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3908D3B8287C69CD004D31F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +82,14 @@
 		3908D401287D7547004D31F4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		3908D404287D823E004D31F4 /* MockTrendingRepoWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrendingRepoWebService.swift; sourceTree = "<group>"; };
 		3908D408287DB3EA004D31F4 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		3908D410287DF96B004D31F4 /* UILabel + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Ext.swift"; sourceTree = "<group>"; };
+		3908D412287DF987004D31F4 /* UITableView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + Ext.swift"; sourceTree = "<group>"; };
+		3908D414287DF9AA004D31F4 /* UIView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
+		3908D418287DFA28004D31F4 /* retryLottieFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = retryLottieFile.json; sourceTree = "<group>"; };
+		3908D41B287DFA52004D31F4 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		3908D41C287DFA52004D31F4 /* ErrorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		3908D41E287DFA52004D31F4 /* TrendingRepoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingRepoCell.swift; sourceTree = "<group>"; };
+		3908D41F287DFA52004D31F4 /* TrendingRepoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TrendingRepoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +97,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39F8C53D287EE9EE00E30233 /* Kingfisher in Frameworks */,
+				3908D40F287DF90B004D31F4 /* SkeletonView in Frameworks */,
+				3908D40C287DF8EA004D31F4 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +143,10 @@
 		3908D3AB287C69CC004D31F4 /* HomeExercise */ = {
 			isa = PBXGroup;
 			children = (
+				3908D416287DF9BF004D31F4 /* Resources */,
 				3908D3F0287CA4D4004D31F4 /* Network */,
 				3908D3EB287C6EEB004D31F4 /* ViewModel */,
+				3908D417287DFA01004D31F4 /* Scene */,
 				3908D3EA287C6E16004D31F4 /* View */,
 				3908D3E7287C6DD0004D31F4 /* Model */,
 				3908D3E1287C6B6A004D31F4 /* Utilities */,
@@ -130,7 +154,6 @@
 				3908D3DD287C6A39004D31F4 /* Extension */,
 				3908D3DC287C69D8004D31F4 /* App Delegate */,
 				3908D3E4287C6C20004D31F4 /* StoryBoard */,
-				3908D3B5287C69CD004D31F4 /* Assets.xcassets */,
 				3908D3BA287C69CD004D31F4 /* Info.plist */,
 			);
 			path = HomeExercise;
@@ -167,6 +190,9 @@
 		3908D3DD287C6A39004D31F4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3908D410287DF96B004D31F4 /* UILabel + Ext.swift */,
+				3908D412287DF987004D31F4 /* UITableView + Ext.swift */,
+				3908D414287DF9AA004D31F4 /* UIView + Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -208,7 +234,8 @@
 		3908D3EA287C6E16004D31F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3908D3B0287C69CC004D31F4 /* ViewController.swift */,
+				3908D41A287DFA52004D31F4 /* ErrorView */,
+				3908D41D287DFA52004D31F4 /* TableViewCell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,6 +283,41 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		3908D416287DF9BF004D31F4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3908D418287DFA28004D31F4 /* retryLottieFile.json */,
+				3908D3B5287C69CD004D31F4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3908D417287DFA01004D31F4 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				3908D3B0287C69CC004D31F4 /* HomeViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		3908D41A287DFA52004D31F4 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				3908D41B287DFA52004D31F4 /* ErrorView.xib */,
+				3908D41C287DFA52004D31F4 /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		3908D41D287DFA52004D31F4 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3908D41E287DFA52004D31F4 /* TrendingRepoCell.swift */,
+				3908D41F287DFA52004D31F4 /* TrendingRepoCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -272,6 +334,11 @@
 			dependencies = (
 			);
 			name = HomeExercise;
+			packageProductDependencies = (
+				3908D40B287DF8EA004D31F4 /* Lottie */,
+				3908D40E287DF90B004D31F4 /* SkeletonView */,
+				39F8C53C287EE9EE00E30233 /* Kingfisher */,
+			);
 			productName = HomeExercise;
 			productReference = 3908D3A9287C69CC004D31F4 /* HomeExercise.app */;
 			productType = "com.apple.product-type.application";
@@ -345,6 +412,11 @@
 				Base,
 			);
 			mainGroup = 3908D3A0287C69CC004D31F4;
+			packageReferences = (
+				3908D40A287DF8EA004D31F4 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				3908D40D287DF90B004D31F4 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				39F8C53B287EE9EE00E30233 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3908D3AA287C69CC004D31F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -364,6 +436,9 @@
 				3908D3B9287C69CD004D31F4 /* LaunchScreen.storyboard in Resources */,
 				3908D3B6287C69CD004D31F4 /* Assets.xcassets in Resources */,
 				3908D3B4287C69CC004D31F4 /* Main.storyboard in Resources */,
+				3908D419287DFA28004D31F4 /* retryLottieFile.json in Resources */,
+				3908D423287DFA52004D31F4 /* TrendingRepoCell.xib in Resources */,
+				3908D420287DFA52004D31F4 /* ErrorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,16 +463,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3908D3B1287C69CC004D31F4 /* ViewController.swift in Sources */,
+				3908D3B1287C69CC004D31F4 /* HomeViewController.swift in Sources */,
 				3908D3AD287C69CC004D31F4 /* AppDelegate.swift in Sources */,
 				3908D3E3287C6B77004D31F4 /* AppError.swift in Sources */,
 				3908D3E6287C6C94004D31F4 /* TrendingRepoWebServiceProtocol.swift in Sources */,
+				3908D422287DFA52004D31F4 /* TrendingRepoCell.swift in Sources */,
+				3908D411287DF96B004D31F4 /* UILabel + Ext.swift in Sources */,
 				3908D3F8287CAF54004D31F4 /* NetworkService.swift in Sources */,
+				3908D415287DF9AA004D31F4 /* UIView + Ext.swift in Sources */,
 				3908D3ED287C6F04004D31F4 /* TrendingRepoViewModel.swift in Sources */,
 				3908D3EF287C704A004D31F4 /* TrendingRepoCellViewModel.swift in Sources */,
 				3908D402287D7547004D31F4 /* Constant.swift in Sources */,
 				3908D3AF287C69CC004D31F4 /* SceneDelegate.swift in Sources */,
+				3908D421287DFA52004D31F4 /* ErrorView.swift in Sources */,
 				3908D3E9287C6DD7004D31F4 /* TrendingRepo.swift in Sources */,
+				3908D413287DF987004D31F4 /* UITableView + Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +663,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -594,7 +675,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -610,6 +691,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -621,7 +703,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -750,6 +832,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3908D40A287DF8EA004D31F4 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		3908D40D287DF90B004D31F4 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		39F8C53B287EE9EE00E30233 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3908D40B287DF8EA004D31F4 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3908D40A287DF8EA004D31F4 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		3908D40E287DF90B004D31F4 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3908D40D287DF90B004D31F4 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		39F8C53C287EE9EE00E30233 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39F8C53B287EE9EE00E30233 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3908D3A1287C69CC004D31F4 /* Project object */;
 }

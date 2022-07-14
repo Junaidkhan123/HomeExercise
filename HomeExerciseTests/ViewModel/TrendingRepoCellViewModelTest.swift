@@ -12,11 +12,6 @@ class TrendingRepoCellViewModelTest: XCTestCase {
     var sut: TrendingRepoCellViewModel!
     var trendingRepo: TrendingRepositories!
     override func setUpWithError() throws {
-
-//        let data = loadStub(name: "TrendingRepo", extension: "json")
-//        let decoder = JSONDecoder()
-//        let trendingRepo = try decoder.decode(TrendingRepo.self, from: data)
-//        let totalRepo = trendingRepo.items
         trendingRepo = TrendingRepositories.mocked[0]
         sut = TrendingRepoCellViewModel(trendingRepo:  trendingRepo)
     }
@@ -68,6 +63,19 @@ class TrendingRepoCellViewModelTest: XCTestCase {
         //Assert
 
         XCTAssertEqual(language, "Swift", "sut.getLanguage() should have equal to Swift")
+    }
+
+
+    func testTrendingRepoCellViewModel_WhenLanguageFetched_WithNullValue_ShouldReturnEmptyValue() {
+        //Arrange
+        trendingRepo = TrendingRepositories.mocked[1]
+        sut = TrendingRepoCellViewModel(trendingRepo:  trendingRepo)
+
+        //Act
+        let language = sut.getLanguage()
+        //Assert
+
+        XCTAssertEqual(language, "", "sut.getLanguage() should have equal to emptyString")
     }
 
     func testTrendingRepoCellViewModel_WhenGradeFetched_ShouldReturnTrue() {

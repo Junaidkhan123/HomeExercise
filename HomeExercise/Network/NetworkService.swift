@@ -31,20 +31,12 @@ class NetworkService: TrendingRepoWebServiceProtocol {
                 return
             }
 
-
-            if let data = data {
-                do {
-                    let responseModel = try JSONDecoder().decode(TrendingRepo.self, from: data)
-                    completion(.success(responseModel.items))
-                } catch let error {
-                    print(error.localizedDescription)
-                    completion(.failure(AppError.invalidData))
-                }
+            if let data = data, let responseModel = try? JSONDecoder().decode(TrendingRepo.self, from: data) {
+                completion(.success(responseModel.items))
 
             }
-
             else {
-                completion(.failure(AppError.invalidResponse))
+                completion(.failure(AppError.invalidData))
             }
 
         }
